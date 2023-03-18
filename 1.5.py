@@ -4,5 +4,9 @@ from selenium.webdriver.common.by import By
 url = 'http://parsinger.ru/selenium/3/3.html'
 with webdriver.Chrome() as browser:
     browser.get(url)
-    link = browser.find_elements(By.CLASS_NAME, 'text')
-    print(link[1].text)
+    link = browser.find_element(By.CLASS_NAME, 'text')
+    print(link.text)
+
+'''>>> 191817
+    121314
+    151715'''
