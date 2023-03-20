@@ -1,0 +1,57 @@
+webdriver.back() - вернуться назад, равнозначно стрелочке "назад" в браузере;
+
+webdriver.forward() - вернутся вперёд, равнозначно стрелочке "вперёд" в браузере;
+
+webdriver.refresh() -  обновляет активную страницу в браузере, равнозначно стрелочке обновить;
+
+webdriver.get_screenshot_as_file("../file_name.jpg") - ожидает полной загрузки страницы и сохраняет скриншот в указанной папке. 
+Возвращает False, если есть ошибка ввода-вывода, иначе возвращает True;
+
+webdriver.save_screenshot("file_name.jpg") - ожидает полной загрузки страницы и сохраняет скриншот в папке с проектом;
+
+webdriver.get_screenshot_as_png() - сохраняет скриншот в виде двоичных данных, которые можно передать или сохранить в файл в конструкторе with/as;
+
+webdriver.get_screenshot_as_base64() -после загрузки страницы, получает скриншот текущего окна в виде строки в кодировке base64. 
+Полезно во встроенных изображениях в HTML;
+
+webdriver.get("http://example_url.ru") - метод получает ссылку которая откроется в браузере;
+
+webdriver.quit() - метод разрывает все соединения установленные браузеров, очищает после себя оперативную память; 
+
+webdriver.close() - закрывает текущую вкладку;
+
+webdriver.execute_script("script_code") - исполняет на странице переданный JavaScript код;
+
+webdriver.execute_async_script("script_code" , *args ) - асинхронно выполняет код JavaScript на странице;
+
+webdriver.set_page_load_timeout() - устанавливает timeout ожидания загрузки страницы после чего выбрасывает исключение;
+
+webdriver.find_element("element" or "locator- By.") - возвращает первый найденный элемент соответствующий локатору или элементу;
+
+webdriver.find_elements("element" or "locator- By.") - возвращает resultSet найденных элементов, с ним можно работать как со списком;
+
+webdriver.get_window_position() - возвращает позицию открытого окна браузера, возвращается словарь {'x': 10, 'y': 50};
+
+webdriver.maximize_window() - разворачивает текущее окно;
+
+webdriver.minimize_window() - сворачивает текущее окно;
+
+webdriver.fullscreen_window()  - максимизирует активное окно браузера, аналогично нажатию клавиши F11;
+
+webdriver.get_window_size() - получает текущий размер окна браузера + рамки окна и панель управления браузера, возвращает словарь {'width': 945, 'height': 1020};
+
+webdrive.set_window_size(800,600) - устанавливает высоту и ширину браузера;
+
+webdriver.get_cookies()  - возвращает словарь с cookies;
+
+webdriver.get_cookie(name_cookie) - возвращает набор cookie по его имени;
+
+webdriver.add_cookie(cookie_dict) - добавляет cookie к вашему текущему сеансу;
+
+webdriver.delete_cookie(name_cookie) - удаляет cookie с заданным именем;
+
+webdriver.delete_all_cookies() - удаляет все файлы cookie в рамках текущего сеанса;
+
+webdriver.implicitly_wait(10) - устанавливает неявное ожидание поиска элемента, или для команды завершения;
+
+webdriver.click(webelement) - совершает клик по выбранному  элементу, клик возможен только по интерактивному элементу.
