@@ -1,6 +1,5 @@
 # Запуск браузера с расширениями
 
-
 import time
 from selenium import webdriver
 
